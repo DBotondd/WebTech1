@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Home - Football World</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/search.js"></script>
+<style>
+.highlight { background: #ecfff1; border-left: 6px solid #10b981; padding: 0.75rem; }
+</style>
+</head>
+<body>
+<header>
+  <img src="assets/banner_en.svg" alt="FW banner" class="banner" />
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="players.html">Top Scorers</a>
+    <a href="quiz.html">Guessing Game</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="about.html">About Me</a>
+  </nav>
+</header>
+<main>
+<article>
+  <section>
+    <h1>Welcome to the <span class="accent">Football World </span>!</h1>
+    <p class="lead">Everything about <strong> football: </strong> records, games, interesting facts.</p>
+  </section>
+
+  <section id="search-section">
+    <h2>Search</h2>
+    <div class="searchbar">
+      <input type="search" id="searchInput" placeholder="Search for a player or page (e.g. Messi, Contact)">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="searchResults" class="search-results"></div>
+    <p class="hint">Tip: search for a player's name to open the Top Goal Scorers page.</p>
+  </section>
+
+  <section id="video-section">
+    <h2>A video to show how amazing football can be</h2>
+    <div class="video-wrapper">
+      <video id="matchVideo" width="640" height="360" controls poster="assets/banner_en.svg">
+        <source src="assets/goal.mp4" type="video/mp4">
+        <source src="assets/goal.webm" type="video/webm">
+        The browser does not support the video.
+      </video>
+      <div class="controls">
+        <button id="btnPlay">Play</button>
+        <button id="btnPause">Pause</button>
+        <button id="btnMute">Mute</button>
+        <input id="scrub" type="range" min="0" max="100" value="0" />
+      </div>
+    </div>
+    <script defer src="js/video.js"></script>
+  </section>
+</article>
+
+</main>
+<aside class="sidebar" style="border-left:4px solid #0ea5e9">
+  <h3>Looking for more?</h3>
+  <p>Explore the rest of my website!</p>
+</aside>
+<footer>
+  <p>&copy; 2025 Football World • Made By: Dobozi Botond</p>
+</footer>
+</body>
+</html>

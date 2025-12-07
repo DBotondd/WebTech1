@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Guessing Game - Football World</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script defer src="js/main.js"></script>
+<style>
+/* Page-level demo styles to satisfy requirement of <style> usage */
+.highlight { background: #ecfff1; border-left: 6px solid #10b981; padding: 0.75rem; }
+</style>
+</head>
+<body>
+<header>
+  <img src="assets/banner_en.svg" alt="FW banner" class="banner" />
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="players.html">Top Scorers</a>
+    <a href="quiz.html">Guessing Game</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="about.html">About Me</a>
+  </nav>
+</header>
+<main>
+
+<article>
+  <section>
+    <h1>Guess The Player</h1>
+    <p>Choose from the hints and see if the answer is correct.</p>
+    <div id="game" class="game">
+      <div id="question" class="question"></div>
+      <div id="options" class="options"></div>
+      <div id="result" class="result"></div>
+      <button id="next" class="next">Next Question</button>
+    </div>
+  </section>
+</article>
+<script defer src="js/game.js"></script>
+
+</main>
+<aside class="sidebar" style="border-left:4px solid #0ea5e9">
+  <h3>Looking for more?</h3>
+  <p>Explore the rest of my website!</p>
+</aside>
+<footer>
+  <p>&copy; 2025 Football World • Made By: Dobozi Botond</p>
+</footer>
+</body>
+</html>

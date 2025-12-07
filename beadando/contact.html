@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Me - Football World</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script defer src="js/main.js"></script>
+<style>
+/* Page-level demo styles to satisfy requirement of <style> usage */
+.highlight { background: #ecfff1; border-left: 6px solid #10b981; padding: 0.75rem; }
+</style>
+</head>
+<body>
+<header>
+  <img src="assets/banner_en.svg" alt="FW banner" class="banner" />
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="players.html">Top Scorers</a>
+    <a href="quiz.html">Guessing Game</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="about.html">About Me</a>
+  </nav>
+</header>
+<main>
+
+<article>
+  <section>
+    <h1>Contact Me</h1>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Full Name" />
+        <small class="error"></small>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="xyz@xzy.com" />
+        <small class="error"></small>
+      </div>
+      <div class="form-row">
+        <label for="fav">Favourite team</label>
+        <input list="teams" id="fav" name="fav" placeholder="Start typing..." />
+        <datalist id="teams">
+          <option value="FC Barcelona"></option>
+          <option value="Real Madrid"></option>
+          <option value="Ferencváros"></option>
+          <option value="Liverpool"></option>
+          <option value="Bayern München"></option>
+        </datalist>
+      </div>
+      <div class="form-row">
+        <label>Playstyle</label>
+        <label><input type="radio" name="style" value="támadó"> Attacking</label>
+        <label><input type="radio" name="style" value="védekező"> Defending</label>
+        <small class="error"></small>
+      </div>
+      <div class="form-row">
+        <label>Interests</label>
+        <label><input type="checkbox" name="topics" value="taktika"> Tactics</label>
+        <label><input type="checkbox" name="topics" value="átigazolások"> Transfers</label>
+        <label><input type="checkbox" name="topics" value="statisztikák"> Statistics</label>
+        <small class="error"></small>
+      </div>
+      <div class="form-row">
+        <label for="color">Favourite kit color</label>
+        <input type="color" id="color" name="color" value="#10b981" />
+      </div>
+      <div class="form-row">
+        <label for="date">Date of birth</label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <div class="form-row">
+        <label for="rating">Rate yourself(1-10)</label>
+        <input type="number" id="rating" name="rating" min="1" max="10" />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your question here..."></textarea>
+        <small class="error"></small>
+      </div>
+      <ol class="instructions">
+        <li>Fill in all required fields.</li>
+        <li>Please select at least one interest.</li>
+        <li>Please check the correctness of the data before sending.</li>
+      </ol>
+      <div class="buttons">
+        <button type="submit" id="submitBtn">Send</button>
+        <button type="reset">Clear All</button>
+      </div>
+    </form>
+  </section>
+</article>
+<script defer src="js/form.js"></script>
+
+</main>
+<aside class="sidebar" style="border-left:4px solid #0ea5e9">
+  <h3>Looking for more?</h3>
+  <p>Explore the rest of my website!</p>
+</aside>
+<footer>
+  <p>&copy; 2025 Foci Világ • Készítette: Dobozi Botond</p>
+</footer>
+</body>
+</html>
