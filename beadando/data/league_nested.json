@@ -1,0 +1,42 @@
+{
+  "league": {
+    "name": "Foci Világ Liga",
+    "season": 2025,
+    "teams": [
+      {
+        "name": "Zöld Villám",
+        "colors": [
+          "#10b981",
+          "#064e3b"
+        ],
+        "players": [
+          {
+            "name": "Áron",
+            "role": "csatár"
+          },
+          {
+            "name": "Bence",
+            "role": "kapus"
+          }
+        ]
+      },
+      {
+        "name": "Kék Vihar",
+        "colors": [
+          "#38bdf8",
+          "#0ea5e9"
+        ],
+        "players": [
+          {
+            "name": "Csaba",
+            "role": "védő"
+          },
+          {
+            "name": "Dániel",
+            "role": "középpályás"
+          }
+        ]
+      }
+    ]
+  }
+}

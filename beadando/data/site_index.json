@@ -1,0 +1,57 @@
+{
+  "pages": [
+    {
+      "title": "Home",
+      "href": "index.html",
+      "keywords": [
+        "home",
+        "kezdőlap",
+        "video",
+        "összefoglaló",
+        "keresés"
+      ]
+    },
+    {
+      "title": "Top Scorers",
+      "href": "players.html",
+      "keywords": [
+        "players",
+        "góllövő",
+        "leaderboard",
+        "top",
+        "scorers",
+        "táblázat"
+      ]
+    },
+    {
+      "title": "Quiz",
+      "href": "quiz.html",
+      "keywords": [
+        "quiz",
+        "kvíz",
+        "játék",
+        "guessing",
+        "találd ki"
+      ]
+    },
+    {
+      "title": "Contact",
+      "href": "contact.html",
+      "keywords": [
+        "contact",
+        "kapcsolat",
+        "űrlap",
+        "email"
+      ]
+    },
+    {
+      "title": "About",
+      "href": "about.html",
+      "keywords": [
+        "about",
+        "rólunk",
+        "info"
+      ]
+    }
+  ]
+}
