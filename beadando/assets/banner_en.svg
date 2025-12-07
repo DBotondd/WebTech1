@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="300" viewBox="0 0 1600 300">
+  <defs>
+    <pattern id="grass" patternUnits="userSpaceOnUse" width="40" height="40">
+      <rect width="40" height="40" fill="#0b8f2a"/>
+      <rect width="20" height="40" fill="#0a7b24" opacity="0.4"/>
+    </pattern>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#042a18" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="300" fill="url(#grass)"/>
+  <!-- center circle line for pitch flavor -->
+  <circle cx="300" cy="150" r="120" fill="none" stroke="#ffffff" opacity="0.25" stroke-width="4"/>
+  <!-- ball -->
+  <g filter="url(#shadow)">
+    <circle cx="150" cy="150" r="90" fill="#fff" stroke="#111" stroke-width="6"/>
+    <g transform="translate(150,150)">
+      <polygon points="0,-70 20,-10 -40,-40" fill="#111"/>
+      <polygon points="0,-70 -20,-10 40,-40" fill="#111"/>
+      <polygon points="0,70 20,10 -40,40" fill="#111"/>
+      <polygon points="0,70 -20,10 40,40" fill="#111"/>
+      <polygon points="-70,0 -10,20 -40,-40" fill="#111"/>
+      <polygon points="70,0 10,20 40,-40" fill="#111"/>
+    </g>
+  </g>
+  <text x="350" y="180" font-size="96" font-family="Segoe UI, Arial, sans-serif" fill="#ffffff" stroke="#0a4" stroke-width="3">
+    Football World
+  </text>
+</svg>
